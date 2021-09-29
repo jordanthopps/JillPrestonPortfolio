@@ -1,0 +1,38 @@
+
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    /*aspect ratio which allows the background photo to expand*/
+    background-size: cover;
+    background-image: radial-gradient(circle 827px at 47.3% 48%, rgba(255, 255, 255, 1) 0%, rgb(248, 64, 187) 90%);
+}
+
+.googleFontTitle{
+    font-family: 'Parisienne', sans-serif;
+}
+
+.googleFontBody{
+    font-family: 'Roboto Condensed', serif;
+}
+
+/* show big image on bigger screens */
+@media only screen and (min-width: 992px) {
+    .header {
+        background-image: url("/img/JillPrestonLarge.png");
+        min-height: 400px;
+    }
+}
+
+/* show small image on smaller screens */
+@media only screen and (min-width:576) and (max-width: 991px) {
+    .header {
+        background-image: url("/img/JillPrestonSmall.png");
+    }
+}
